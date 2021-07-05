@@ -1,0 +1,3 @@
+/home/cyberdemon/Coding/CPP/MathLibreryCPP/Debug/CMakeFiles/rebuild_cache.dir
+/home/cyberdemon/Coding/CPP/MathLibreryCPP/Debug/CMakeFiles/edit_cache.dir
+/home/cyberdemon/Coding/CPP/MathLibreryCPP/Debug/CMakeFiles/MathLib.dir

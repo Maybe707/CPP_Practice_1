@@ -1,0 +1,10 @@
+;; Eval Buffer with `M-x eval-buffer' to register the newly created template.
+
+(dap-register-debug-template
+  "cppdebug"
+  (list :type "cppdbg"
+        :request "launch"
+        :name "cppdebbugger"
+        :MIMode "gdb"
+        :program "/home/mayde/Coding/CPP/NeuralNetWorkExamples/neuralnetworkMain/exec"
+        :cwd "/home/mayde/Coding/CPP/NeuralNetWorkExamples/neuralnetworkMain/"))

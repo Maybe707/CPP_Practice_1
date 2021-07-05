@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/MathLib.dir/mathlibrery.cpp.o  -o ../MathLib 

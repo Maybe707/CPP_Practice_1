@@ -1,0 +1,128 @@
+#include <iostream>
+
+template<typename T>
+T adder(T v) {
+  return v;
+}
+
+template<typename T, typename... Args>
+T adder(T first, Args... args) {
+  return first + adder(args...);
+}
+
+unsigned short*[] func1()
+{
+    unsigned short* ptr;
+    unsigned short array[] = {2, 5, 11, 23, 1};
+    ptr = array;
+    return ptr;
+}
+
+int main()
+{
+  
+    unsigned short* (**arrayPointer[5][7])(unsigned short[]);
+    unsigned short* (*funcPointer)() = func1;
+    unsigned short* (**pointPointer1)() = &funcPointer;
+    unsigned short *(*(**bazz[5][7])())[] = {pointPointer1};
+    unsigned short* (**pointPointer2)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer3)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer4)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer5)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer6)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer7)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer8)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer9)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer10)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer11)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer12)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer13)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer14)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer15)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer16)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer17)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer18)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer19)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer20)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer21)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer22)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer23)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer24)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer25)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer26)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer27)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer28)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer29)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer30)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer31)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer32)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer33)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer34)(unsigned short[]) = &funcPointer;
+    unsigned short* (**pointPointer35)(unsigned short[]) = &funcPointer;
+
+    arrayPointer[0][0] = pointPointer1;
+    arrayPointer[0][1] = pointPointer2;
+    arrayPointer[0][2] = pointPointer3;
+    arrayPointer[0][3] = pointPointer4;
+    arrayPointer[0][4] = pointPointer5;
+    arrayPointer[0][5] = pointPointer6;
+    arrayPointer[0][6] = pointPointer7;
+    arrayPointer[1][0] = pointPointer8;
+    arrayPointer[1][1] = pointPointer9;
+    arrayPointer[1][2] = pointPointer10;
+    arrayPointer[1][3] = pointPointer11;
+    arrayPointer[1][4] = pointPointer12;
+    arrayPointer[1][5] = pointPointer13;
+    arrayPointer[1][6] = pointPointer14;
+    arrayPointer[2][0] = pointPointer15;
+    arrayPointer[2][1] = pointPointer16;
+    arrayPointer[2][2] = pointPointer17;
+    arrayPointer[2][3] = pointPointer18;
+    arrayPointer[2][4] = pointPointer19;
+    arrayPointer[2][5] = pointPointer20;
+    arrayPointer[2][6] = pointPointer21;
+    arrayPointer[3][0] = pointPointer22;
+    arrayPointer[3][1] = pointPointer23;
+    arrayPointer[3][2] = pointPointer24;
+    arrayPointer[3][3] = pointPointer25;
+    arrayPointer[3][4] = pointPointer26;
+    arrayPointer[3][5] = pointPointer27;
+    arrayPointer[3][6] = pointPointer28; 
+    arrayPointer[4][0] = pointPointer29;
+    arrayPointer[4][1] = pointPointer30;
+    arrayPointer[4][2] = pointPointer31;
+    arrayPointer[4][3] = pointPointer32;
+    arrayPointer[4][4] = pointPointer33;
+    arrayPointer[4][5] = pointPointer34;
+    arrayPointer[4][6] = pointPointer35;
+ 
+    
+    char variableCh[] = "0";
+
+    /*int var = 35;
+    do
+    {
+        if(variableCh[0] == 57)
+            variableCh[0] += 8;
+        std::cout << variableCh << std::endl;   
+        variableCh[0]++;  
+        var--;
+    }while(var > 0);*/
+
+    /*for(int i = 0; i < 5; ++i)
+    {
+        for(int j = 0; j < 7; ++j)
+            {
+            */
+             
+    
+    long sum = adder(1, 2, 3, 8, 7);
+
+    std::string s1 = "x", s2 = "aa", s3 = "bb", s4 = "yy";
+    std::string ssum = adder(s1, s2, s3, s4);
+
+    std::cout << sum << std::endl;
+    
+
+    return 0;
+}

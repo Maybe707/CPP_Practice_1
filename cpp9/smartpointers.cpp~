@@ -1,0 +1,15 @@
+#include <cstdlib>
+#include <iostream>
+
+int main()
+{
+    int *pointer = new int;
+    *pointer = 1000;
+fbcvbcvbcvbcvbcvbcvbcvb    
+    std::cout << *pointer << std::endl;
+ std::cout << std::endl;
+    delete pointer;
+    pointer = nullptr; 
+    
+    return 0;
+}

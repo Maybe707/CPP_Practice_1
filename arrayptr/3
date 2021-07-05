@@ -1,0 +1,36 @@
+#include <iostream>
+#include <typeinfo>
+
+int (*func(int** array)
+{
+    return array;
+}
+
+int func2(int variable)
+{
+    return variable;
+}
+
+int main()
+{
+    int array[2][3];
+    int* p[2] = {array[0], array[1]};
+    int** pp = p;
+
+    int variable = 10;
+    int *ptr = &variable;
+
+    std::cout << *ptr << std::endl;
+    std::cout << ptr << std::endl;
+    std::cout << &variable << std::endl;
+    std::cout << &ptr << std::endl;
+
+    int *pointer = new int(1200);
+    std::cout << *pointer << std::endl;
+
+    func(array);
+
+    std::cout << typeid(array).name() << std::endl;
+
+    return 0;
+}

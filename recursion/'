@@ -1,0 +1,30 @@
+#include <iostream>
+
+int foonc2(int *var, int sum);
+
+void foonc1(int *var, int sum)
+{
+    if(*var > 1)
+    {
+        foonc2(var, sum);
+    }
+    sum = 1;
+    return;
+}
+
+int foonc2(int *var, int sum)
+{
+    --var;
+    foonc1(var, sum);
+    ++var;
+    sum = *var*sum;
+}
+
+int main()
+{
+    int variable = 0;
+    int *pointer = &variable;
+    std::cout << foonc1(pointer, 1);
+    
+    
+    
